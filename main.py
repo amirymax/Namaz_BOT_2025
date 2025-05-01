@@ -4,12 +4,13 @@ import json
 from datetime import datetime, timedelta
 import logging
 import asyncio
+from api_token import TOKEN
 
 # Логирование
 logging.basicConfig(level=logging.INFO)
 
 # Инициализация бота
-bot = Bot(token='2030466425:AAGzXxR35N_ZLhgLvAu0fopPdtRAAlg2lrA')
+bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 # Загружаем данные о временах намаза
